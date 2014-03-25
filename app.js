@@ -31,12 +31,12 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/users', user.list);
-app.get('/init',book.init);
-app.get('/getbook',book.getbook);
-app.get('/shanchu',book.shanchu);
-app.get('/fenye',book.fenye);
-app.get('/addBook',book.addBook);
-app.get('/update',book.update);
+app.get('/init',book.init); //初始化
+app.get('/getbook',book.getbook); //查
+app.get('/shanchu',book.shanchu); //删
+app.get('/fenye',book.fenye); //分页
+app.get('/addBook',book.addBook); //增
+app.get('/update',book.update); //改
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
