@@ -101,4 +101,8 @@ mongoose技术分享
   ....
  
 
-
+ ##参考
+ * <a href='http://cnodejs.org/topic/504b4924e2b84515770103dd'>入门篇</a>
+ * <a href='http://mongoosejs.com/docs/guide.html'>文档</a>
+  
+  
