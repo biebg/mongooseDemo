@@ -7,7 +7,7 @@ mongoose技术分享
  * 中间件，插件，setter，getter。。。。（没实际操作过，不是很理解）；
 
 ##2.mongoose的用法
-#### 链接数据库
+### 链接数据库
   ```
   mongoose.connect("mongodb://username:pswd@ip:port/dbname", function (err) {
     if (err) {
@@ -18,7 +18,7 @@ mongoose技术分享
   ```
   
 
-#### 新建Schema
+### 新建Schema
   ``` 
   var mongoose = require('mongoose');
   var Schema = mongoose.Schema;
@@ -40,7 +40,7 @@ mongoose技术分享
   * __ObjectId__（Schema.Types.ObjectId）
   * Array
   
-#### 新建model
+### 新建model
 ```
   var Books=mongoose.model('Book', BookSchema);
   var book=new Books({name:"javascript"});
