@@ -1,20 +1,9 @@
-mongooseDemo
+mongoose技术分享
 ============
+##1.为什么使用mongoose（个人见解）
+ * 单易用，许多方法都已封装完成（如find，findOne，findById等等）；
+ * 对于索引，唯一值，默认值这些可直接通过一个字段即可设置完成，不需要多余代码；
+ * 代码分享上，别人可直接从Scheme中看出数据库结构；
+ * 中间件，插件，setter，getter。。。。（没实际操作过，不是很理解）；
 
-mongooseDemo
-
-##初始化
- * 运行前打开mongod
- * node app.js
- * 浏览器输入localhost:3000/init初始化数据
-
-##运行
-
-```
-app.get('/init',book.init); //初始化
-app.get('/getbook',book.getbook); //查
-app.get('/shanchu',book.shanchu); //删
-app.get('/fenye',book.fenye); //分页
-app.get('/addBook',book.addBook); //增
-app.get('/update',book.update); //改
-```
+##2.mongoose的用法
