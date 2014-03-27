@@ -76,8 +76,8 @@ mongoose技术分享
   })
   })
   ```
-* 改
-```
+  * 改:
+  ```
   Books.find({name:"javascript"},{}),function(err,books){
       ...
       book.name='js';
@@ -88,14 +88,16 @@ mongoose技术分享
        console.log("success")
   })
   })
-```
- ```
+  ```
+  ```
   Books.findAndUpdate({name:"javascript"},{$set:{name:"js"}},function(err,result){
 
    .....
 
   })
- ```
+  ```
+ ##3.mongoose实际项目中的使用架构建议
+  ....
  
 
 
