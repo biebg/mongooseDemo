@@ -78,6 +78,12 @@ mongoose技术分享
   })
   ```
   * 改:
+  ```
+   Books.findById(id,function(err,book){
+      book.name = 'js';
+      book.save(function(err){});
+    });
+  ```
 
   ```
   Books.findAndUpdate({name:"javascript"},{$set:{name:"js"}},function(err,result){
