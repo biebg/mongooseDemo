@@ -78,18 +78,7 @@ mongoose技术分享
   })
   ```
   * 改:
-  ```
-  Books.find({name:"javascript"},{}),function(err,books){
-      ...
-      book.name='js';
-      book.save(function(err){
-      if(err)
-       console.log(err);
-      else
-       console.log("success")
-  })
-  })
-  ```
+
   ```
   Books.findAndUpdate({name:"javascript"},{$set:{name:"js"}},function(err,result){
 
