@@ -14,8 +14,8 @@ mongoose技术分享
   var Schema = mongoose.Schema;
 
   var BookSchema = new Schema({
-    name: { type: String, __unique__: true, __index__: true },
-   	publishTime: {type: Date, __default__: Date.now},
+    name: { type: String, *unique*: true, *index*: true },
+   	publishTime: {type: Date, default: Date.now},
    	description:{type: String}，
    	havasale:{type:Number,min:0}
   });
