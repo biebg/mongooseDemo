@@ -51,6 +51,33 @@ mongoose技术分享
        console.log("success")
   })
 ```
+### 增删改查
+  增删改查，之前的方法都还可以用（除了insert），下面只介绍*不一样*的地方：
+  
+  * 增：
+  ```
+    var book=new Books({name:"javascript"});
+  book.save(function(err){
+   if(err)
+       console.log(err);
+   else
+       console.log("success")
+  })
+  ```
+  
+  ```
+  Books.create({ size: 'javascript' }, function (err, book) {
+  if (err) console.log(err);
+  book.save(function(err){
+   if(err)
+       console.log(err);
+   else
+       console.log("success")
+  })
+  })
+  ```
+ * 改
+ *
 
 
 
