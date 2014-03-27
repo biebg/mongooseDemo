@@ -76,7 +76,7 @@ mongoose技术分享
   })
   })
   ```
- * 改
+* 改
 ```
   Books.find({name:"javascript"},{}),function(err,books){
       ...
