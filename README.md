@@ -55,6 +55,41 @@ mongoose技术分享
 ```
 ### 增删改查
   增删改查，之前的方法都还可以用（除了insert），下面只介绍__不一样__的地方：
+  * 查
+   
+  find
+  ```
+    Books.find({}, fields, options, function(err, data){
+	        callback && callback(err, data);
+	    });
+   }
+  ```  
+  findOne
+  ```
+   Books.findOne({name:"javascript"}, fields, options, function(err, result){
+	        callback && callback(err, result);
+	    });
+   }
+   
+  ```
+  findOneAndRemove
+  ```
+   Books.findOneAndRemove({name:"javascript"},{},function(err,result){
+        callback && callback(err, result);
+   })
+  ```
+  findOneAndUpdate
+  ```
+  Books.findOneAndUpdate(query, fields, options, function(err, data){
+		callback && callback(err, data);
+	});
+  ```
+  分页
+  ```
+   Books.find({},{},{skip:begin,limit:limit},function(err,result){
+          res.send(result);
+    })
+  ```
   
   * 增：
   ```
